@@ -38,8 +38,7 @@ int encontrarMejorAlumno(float calificacionesGrupo[NUM_ALUMNOS][NUM_PROGRESOS]) 
     }
     return mejorAlumno;
 }
-
-int main(int argc, char const *argv[])
+int main()
 {
     float calificaciones[NUM_ALUMNOS][NUM_PROGRESOS];
 
@@ -78,10 +77,11 @@ int main(int argc, char const *argv[])
         printf("Progreso %d: %.2f\n", j + 1, promedioGrupo);
     }
 
-    // 3- El alumno que obtuvo el mayor promedio de calificación durante el semestre
+    // 3- El alumno que obtuvo el mayor promedio de calificación durante el semestr
     int mejorAlumno = encontrarMejorAlumno(calificaciones);
     printf("\nAlumno con el mayor promedio de calificación durante el semestre:\n");
     printf("Alumno %d\n", mejorAlumno + 1);
+
 
     getch();
     return 0;
