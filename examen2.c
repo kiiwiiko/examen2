@@ -38,3 +38,9 @@ int encontrarMejorAlumno(float calificacionesGrupo[NUM_ALUMNOS][NUM_PROGRESOS]) 
     }
     return mejorAlumno;
 }
+
+int main(int argc, char const *argv[])
+{
+    getch();
+    return 0;
+}
